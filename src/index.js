@@ -10,7 +10,7 @@ import {BrowserRouter} from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <AuthProvider authUrl={"https://0845428.propelauthtest.com"}>
+        <AuthProvider authUrl={process.env.REACT_APP_AUTH_URL}>
             <BrowserRouter>
                 <App/>
             </BrowserRouter>
